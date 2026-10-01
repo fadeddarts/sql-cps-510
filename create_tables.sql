@@ -74,7 +74,7 @@ CREATE TABLE staff_scheduling(
     shift_type VARCHAR2(25) NOT NULL,
     time_in DATE DEFAULT SYSDATE NOT NULL,
     time_out DATE,
-    break_time VARCHAR2(25) DEFAULT '1HR', 
+    break_time INT DEFAULT 60, 
     work_status VARCHAR2(25) DEFAULT 'regular hours',
     CONSTRAINT pk_staff_scheduling PRIMARY KEY(employee_id, time_in) 
 ); 
